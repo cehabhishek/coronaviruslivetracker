@@ -22,12 +22,7 @@
                 $allIndiaCoronaData = file_get_contents("https://api.covid19india.org/v2/state_district_wise.json");
                 $jsonEncodeIndiaData = json_decode($allIndiaCoronaData,true); 
 
-                // echo "<pre>";
-                // print_r($jsonEncodeIndiaData);
-                // // echo $jsonEncodeIndiaData[0]['state'];
-
-                  // echo count($jsonEncodeIndiaData[0]['districtData']);
-                // die();
+             
 
                 
               ?>
