@@ -22,7 +22,6 @@
                 $allIndiaCoronaData = file_get_contents("https://api.covid19india.org/v2/state_district_wise.json");
                 $jsonEncodeIndiaData = json_decode($allIndiaCoronaData,true); 
 
-             
 
                 
               ?>
@@ -64,13 +63,13 @@
         <div class="btn-group" role="group">
             <button type="button" id="world" class="btn btn-primary" href="#tab1" data-toggle="tab">
                 <div><b>World</b> </div>
-                <input type="text" size="13" id="wordlinput" placeholder="Search..." onkeyup="worldFilter()" >
+                <input type="text" size="13"  class="form-control" id="wordlinput" placeholder="Search..." onkeyup="worldFilter()" >
             </button>
         </div>
         <div class="btn-group" role="group">
             <button type="button" id="india" class="btn btn-default" href="#tab2" data-toggle="tab">
                 <div><b>India</b></div>
-                <input type="text"  size="13" id="indiainput" placeholder="Search..." onkeyup="indiaFilter()">
+                <input type="text"  size="13" class="form-control" id="indiainput" placeholder="Search..." onkeyup="indiaFilter()">
             </button>
         </div>
        
@@ -139,7 +138,7 @@
             </tbody>
           </table>
         </div>
-        <div class="tab-pane fade" id="tab2">
+        <div class="tab-pane fade table-responsive" id="tab2"  >
             
             <table class="table table-bordered" style="border-collapse:collapse;" id="indiaTable">
                 <thead>
